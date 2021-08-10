@@ -1,10 +1,10 @@
 {
-  "name": "browser-beam",
+  "name": "",
   "version": "1.2.0",
   "description": "Lightweight wrapper around fetch API, with better error handling and more powerful config options.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "tsc -p . && cp package.json dist && cp README.md dist",
+    "build": "rm -r ./dist tsc -p . && cp package.json dist && cp README.md dist",
     "deploy": "yarn version && npm run build && cd dist && npm publish"
   },
   "author": "",
